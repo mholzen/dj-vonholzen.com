@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+body {
+	background: white;
+}
+
+#main-logo {
+	padding-top: 30px;
+}
+p, a, li {
+	font-family: 'Droid Sans Mono', sans-serif;
+	color: #222;
+}
+
+li {
+	font-family: 'Orbitron', sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #f60;
+}
+a:hover {
+	color: red;
+}
+#seattle {
+	font-family: 'Orbitron', sans-serif;
+	font-size: xx-large;
+	padding-top: 30px;
+}
+#styles {
+	padding-top: 30px;
+}
+#styles li {
+	font-family: 'Orbitron', sans-serif;
+	font-size: large;
+	letter-spacing: 3px;
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 40px;
+}
+
+#links {
+	padding-top: 30px;
+	letter-spacing: 1px;
+}
+
+div#content-header h1.title {
+	display: none;
+}
+div#content {
+	text-align: center;
+}
+

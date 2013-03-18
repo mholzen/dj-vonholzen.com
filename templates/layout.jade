@@ -1,0 +1,19 @@
+!!! 5
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      title
+        block title
+          = locals.name
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Orbitron')
+      link(rel='stylesheet', href='/css/main.css')
+      link(rel='stylesheet', href='/css/main-mvh.css')
+  body
+    div#content
+      block content
+        h2 Welcome to zombocom!
+    footer
+      div.inner
+        block footer
+          p &copy; #{ new Date().getFullYear() } #{ locals.owner }
