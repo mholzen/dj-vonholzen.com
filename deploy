@@ -1,0 +1,1 @@
+ssh-vonholzen "(cd marcvh.com.git; git pull origin master)"
