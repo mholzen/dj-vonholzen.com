@@ -1,0 +1,70 @@
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika+Negative">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Julius+Sans+One">
+<style>
+img { width: 100%; }
+body {
+  margin: 0;
+  font-family: "Signika Negative", sans-serif;
+  font-family: "Julius Sans One", sans-serif;
+ }
+h1, h2, h3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  text-align: center;
+  padding: 0;
+}
+ul { text-align: center; padding: 0; }
+li { width: 120px; }
+li { display: inline-block; margin: 2em;}
+a { text-decoration: none; color: orange; }
+
+.parallax {
+  opacity: 1;
+  height: 1000px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1 {
+  background-image: url("/files/unyacht-4.jpg");
+}
+.img2 {
+  background-image: url("/files/at-love-affair.jpg");
+}
+
+
+.in {
+	opacity: 1;
+	position: absolute;
+	top: 60%;
+	width: 100%;
+	color: black;
+	background-color: white;
+	padding-top: 50;
+  padding-bottom: 50;
+	text-align: center;
+}
+</style>
+
+<div class="parallax img1"></div>
+
+<div class="in">
+  <h1>marc von holzen</h1>
+  <h2>seattle</h2>
+
+  <ul>
+  <li>progressive
+  <li>electro
+  <li>psytrance
+  </ul>
+
+<ul>
+<li><a href="http://soundclound.com/marcvh">soundclound</a>
+</ul>
+
+</div>
+
+<div class="parallax img2"></div>

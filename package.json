@@ -1,0 +1,21 @@
+{
+  "name": "marcvh.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "coffee start.coffee",
+    "watch": "forever -a start -w start.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mholzen/marcvh.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mholzen/marcvh.com/issues"
+  },
+  "homepage": "https://github.com/mholzen/marcvh.com#readme"
+}
