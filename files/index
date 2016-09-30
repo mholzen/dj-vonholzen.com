@@ -21,7 +21,7 @@ a { text-decoration: none; color: orange; }
 
 .parallax {
   opacity: 1;
-  height: 1000px;
+  height: 1400px;
 
   background-attachment: fixed;
   background-position: center;
@@ -34,7 +34,9 @@ a { text-decoration: none; color: orange; }
 .img2 {
   background-image: url("/files/at-love-affair.jpg");
 }
-
+.img3 {
+  background-image: url("/files/seattle.png");
+}
 
 .in {
 	opacity: 1;
@@ -53,7 +55,7 @@ a { text-decoration: none; color: orange; }
 
 <div class="in">
   <h1>marc von holzen</h1>
-  <h2>seattle</h2>
+  <h3>seattle</h3>
 
   <ul>
   <li>progressive
@@ -68,3 +70,5 @@ a { text-decoration: none; color: orange; }
 </div>
 
 <div class="parallax img2"></div>
+<div class="parallax img3"></div>
+<div class="parallax img4"></div>
