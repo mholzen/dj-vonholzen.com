@@ -1,0 +1,13 @@
+@prefix : <> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#>.
+
+<1>
+  :name "Hippocampus Red & Black Attack";
+  :audio <https://soundcloud.com/marcvh/hippos-red-black-attack-live>
+.
+
+<2>
+  :name "Un-yacht 3";
+  :audio <https://soundcloud.com/marcvh/un-yacht-3-teaser-progressive-trance> ''
+  event:time "2016-1-1"
+.

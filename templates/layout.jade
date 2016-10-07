@@ -1,4 +1,4 @@
-!!! 5
+doctype html
 html(lang='en')
   head
     block head
@@ -7,11 +7,5 @@ html(lang='en')
         block title
           = locals.name
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Orbitron')
-      link(rel='stylesheet', href='/css/main.css')
-      link(rel='stylesheet', href='/css/main-mvh.css')
       script(src='/js/google-analytics.js')
-  body
-    div#content
-      block content
-        h2 Welcome to zombocom!
-    footer
+  body !{payload}

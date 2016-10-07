@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "coffee start.coffee",
-    "watch": "forever -a start -w start.coffee"
+    "watch": "forever --debug -v -a -w --watchIgnore files --watchIgnore templates -c coffee start.coffee | bunyan",
+    "stop": "forever -a stop start.coffee"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mholzen/marcvh.com/issues"
   },
-  "homepage": "https://github.com/mholzen/marcvh.com#readme"
+  "homepage": "https://github.com/mholzen/marcvh.com#readme",
+  "dependencies": {
+    "bunyan": "^1.8.1"
+  }
 }

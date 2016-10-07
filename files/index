@@ -1,11 +1,17 @@
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika+Negative">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Julius+Sans+One">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika+Negative">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Julius+Sans+One">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Julius+Sans+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300">
 <style>
 img { width: 100%; }
 body {
   margin: 0;
   font-family: "Signika Negative", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-family: "Julius Sans One", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
  }
 h1, h2, h3 {
   margin-left: auto;
@@ -13,6 +19,7 @@ h1, h2, h3 {
   width: 800px;
   text-align: center;
   padding: 0;
+  font-weight: 100;
 }
 ul { text-align: center; padding: 0; }
 li { width: 120px; }
@@ -20,8 +27,8 @@ li { display: inline-block; margin: 2em;}
 a { text-decoration: none; color: orange; }
 
 .parallax {
-  opacity: 1;
-  height: 1400px;
+  opacity: .8;
+  height: 700px;
 
   background-attachment: fixed;
   background-position: center;
@@ -32,16 +39,19 @@ a { text-decoration: none; color: orange; }
   background-image: url("/files/unyacht-4.jpg");
 }
 .img2 {
-  background-image: url("/files/at-love-affair.jpg");
+  background-image: url("/files/seattle.png");
 }
 .img3 {
-  background-image: url("/files/seattle.png");
+  background-image: url("/files/at-love-affair.jpg");
+}
+.img4 {
+  background-image: url("/files/at-un-yacht-3.jpg");
 }
 
 .in {
 	opacity: 1;
-	position: absolute;
-	top: 60%;
+	aposition: absolute;
+	top: 20%;
 	width: 100%;
 	color: black;
 	background-color: white;
@@ -49,12 +59,17 @@ a { text-decoration: none; color: orange; }
   padding-bottom: 50;
 	text-align: center;
 }
+table {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 
 <div class="parallax img1"></div>
 
 <div class="in">
-  <h1>marc von holzen</h1>
+  <h1>MARC VON HOLZEN</h1>
   <h3>seattle</h3>
 
   <ul>
@@ -63,12 +78,28 @@ a { text-decoration: none; color: orange; }
   <li>psytrance
   </ul>
 
-<ul>
-<li><a href="http://soundclound.com/marcvh">soundclound</a>
-</ul>
-
+  <ul>
+  <li><a href="http://soundcloud.com/marcvh">soundcloud</a>
+  <li><a href="mailto:dj@vonholzen.org">email</a>
+  </ul>
 </div>
 
 <div class="parallax img2"></div>
+<div class="in">
+  <h2>Past Shows</h2>
+  <iframe src="/html/json/files/events.cson"/>
+</div>
+
+
 <div class="parallax img3"></div>
+<div class="in">
+<h2>Why?</h2>
+
+<ul>
+<li>disconnect: positive effects of abandon
+<li>dream: immersion
+<li>connect: intimacy without words
+</ul>
+
+</div>
 <div class="parallax img4"></div>
