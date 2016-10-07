@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "coffee start.coffee",
+    "start": "coffee start.coffee | bunyan",
     "watch": "forever --debug -v -a -w --watchIgnore files --watchIgnore templates -c coffee start.coffee | bunyan",
     "stop": "forever -a stop start.coffee"
   },
