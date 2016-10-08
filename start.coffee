@@ -7,4 +7,4 @@ server.start (err)->
   if err
     console.error err
   else
-    console.log 'started'
+    console.log 'started', server.info.uri
