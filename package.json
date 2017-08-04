@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "forever -a -c coffee start.coffee > server.log &",
+    "start": "forever -a -c coffee start.coffee > server.log 2> forever.log &",
     "log": "tail -f server.log | bunyan",
     "watch": "forever --debug -v -a -w --watchIgnore 'files/**' --watchIgnore 'templates/**' -c coffee start.coffee | bunyan",
     "stop": "forever -a stop start.coffee"

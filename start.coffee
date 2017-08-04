@@ -1,6 +1,6 @@
 {Server} = require 'visualize'
 server = new Server
-    port: 8003
+    port: 8001
     rewrites:
       '/': '/pug/files/index.pug'
 
