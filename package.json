@@ -1,27 +1,32 @@
 {
-  "name": "marcvh.com",
+  "name": "dj-vonholzen.com",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "forever -a -c coffee start.coffee > server.log 2> forever.log &",
+    "deploy": "ssh -A ubuntu@52.34.235.177 '(cd dj-vonholzen.com; git pull; npm stop; npm start)'",
     "log": "tail -f server.log | bunyan",
-    "watch": "forever --debug -v -a -w --watchIgnore 'files/**' --watchIgnore 'templates/**' -c coffee start.coffee | bunyan",
-    "stop": "forever -a stop start.coffee"
+    "open": "open http://localhost:8003/",
+    "ssh": "ssh -A ubuntu@52.34.235.177",
+    "start": "forever -a -c coffee start.coffee > server.log 2> forever.log &",
+    "stop": "forever -a stop start.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "forever --debug -v -a -w --watchDirectory ./ -c coffee start.coffee"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mholzen/marcvh.com.git"
+    "url": "git+https://github.com/mholzen/dj-vonholzen.com.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mholzen/marcvh.com/issues"
+    "url": "https://github.com/mholzen/dj-vonholzen.com/issues"
   },
-  "homepage": "https://github.com/mholzen/marcvh.com#readme",
+  "homepage": "https://github.com/mholzen/dj-vonholzen.com#readme",
   "dependencies": {
-    "bunyan": "^1.8.1",
-    "forever": "^0.15.2"
-  }
+    "@vonholzen/system": "^1.0.1",
+    "bunyan": "^1.8.12",
+    "forever": "^0.15.2",
+    "request-promise": "^4.2.5"
+  },
+  "description": ""
 }

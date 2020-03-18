@@ -1,0 +1,93 @@
+  /* link(rel='stylesheet', href='')
+  link(rel='stylesheet', href=)
+  link(rel='stylesheet', href=)
+  link(rel='stylesheet', href=)
+  script(src='files/js/google-analytics.js',type='text/javascript') */
+
+@import url('http://fonts.googleapis.com/css?family=Signika+Negative');
+@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300');
+
+img { width: 100%; }
+body {
+  margin: 0;
+  font-family: "Signika Negative", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Dosis", sans-serif; */
+  /* font-family: "Julius Sans One", sans-serif; */
+  font-weight: 100;
+}
+h1, h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  width: 600px;
+  text-align: center;
+  padding: 0;
+  font-weight: 100;
+}
+h2 { 
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+ul {
+  text-align: center; padding: 0;
+}
+li {
+  width: 120px;
+}
+li { 
+  display: inline-block;
+  margin: 2em;
+  vertical-align: top;
+}
+a { text-decoration: none; color: orange; }
+.parallax {
+  opacity: .8;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1 {
+  background-image: url("/images/unyacht-4.jpg");
+}
+.img2 {
+  background-image: url("/images/seattle.jpg");
+}
+.img3 {
+  background-image: url("/images/at-love-affair.jpg");
+}
+.img4 {
+  background-image: url("/images/at-un-yacht-3.jpg");
+}
+.img5 {
+  background-image: url("/images/ballard-ave.jpg");
+}
+.in {
+  opacity: 1;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+table {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen
+    and (min-device-width: 375px)
+    and (min-device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+       html { font-size: 280%; }
+       .parallax { background-attachment: scroll; }       }
+}
